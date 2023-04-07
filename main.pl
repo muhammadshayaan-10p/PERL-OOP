@@ -8,12 +8,12 @@ use Dog;
 use Bird;
 use Zoo;
 
-my $mammal = Dog->new();
-my $bird = Bird->new();
+my $dog = Dog->new(legs => 4);
+my $bird = Bird->new(wings => 2);
 
-my $zoo = Zoo->new($mammal, $bird);
+my $zoo = Zoo->new($dog, $bird);
 $zoo->call_animals();
 
 # Output:
-# The mammal makes a mammal sound.
-# The bird tweets.
+# The dog makes a dog sound and has 4 legs.
+# The bird tweets and has 2 wings.
